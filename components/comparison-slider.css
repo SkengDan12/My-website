@@ -1,0 +1,77 @@
+.comparison-slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.comparison-slider-container {
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+}
+
+.comparison-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  touch-action: none;
+}
+
+.comparison-handle {
+  cursor: col-resize;
+  transition: transform 0.1s ease;
+}
+
+.comparison-handle:hover {
+  transform: translate(-50%, -50%) scale(1.1) !important;
+}
+
+.comparison-handle:active {
+  transform: translate(-50%, -50%) scale(1.2) !important;
+}
+
+.comparison-label {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.before-label {
+  bottom: 16px;
+  left: 16px;
+}
+
+.after-label {
+  bottom: 16px;
+  right: 16px;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .comparison-slider-container {
+    height: 300px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .comparison-slider-container {
+    height: 250px !important;
+  }
+  
+  .comparison-handle {
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .comparison-label {
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+}
