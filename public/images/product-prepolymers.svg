@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#f3e5f5"/>
+  
+  <!-- Molecular structure background -->
+  <g stroke="#6a1b9a" stroke-width="2" fill="none">
+    <!-- First molecule structure -->
+    <circle cx="120" cy="140" r="10" fill="#6a1b9a" fill-opacity="0.2"/>
+    <circle cx="160" cy="120" r="10" fill="#6a1b9a" fill-opacity="0.2"/>
+    <circle cx="200" cy="140" r="10" fill="#6a1b9a" fill-opacity="0.2"/>
+    <circle cx="240" cy="120" r="10" fill="#6a1b9a" fill-opacity="0.2"/>
+    <circle cx="280" cy="140" r="10" fill="#6a1b9a" fill-opacity="0.2"/>
+    
+    <line x1="120" y1="140" x2="160" y2="120" />
+    <line x1="160" y1="120" x2="200" y2="140" />
+    <line x1="200" y1="140" x2="240" y2="120" />
+    <line x1="240" y1="120" x2="280" y2="140" />
+    
+    <!-- Second molecule structure -->
+    <circle cx="120" cy="200" r="10" fill="#6a1b9a" fill-opacity="0.2"/>
+    <circle cx="160" cy="180" r="10" fill="#6a1b9a" fill-opacity="0.2"/>
+    <circle cx="200" cy="200" r="10" fill="#6a1b9a" fill-opacity="0.2"/>
+    <circle cx="240" cy="180" r="10" fill="#6a1b9a" fill-opacity="0.2"/>
+    <circle cx="280" cy="200" r="10" fill="#6a1b9a" fill-opacity="0.2"/>
+    
+    <line x1="120" y1="140" x2="120" y2="200" />
+    <line x1="160" y1="120" x2="160" y2="180" />
+    <line x1="200" y1="140" x2="200" y2="200" />
+    <line x1="240" y1="120" x2="240" y2="180" />
+    <line x1="280" y1="140" x2="280" y2="200" />
+    
+    <line x1="120" y1="200" x2="160" y2="180" />
+    <line x1="160" y1="180" x2="200" y2="200" />
+    <line x1="200" y1="200" x2="240" y2="180" />
+    <line x1="240" y1="180" x2="280" y2="200" />
+    
+    <!-- Third molecule structure -->
+    <circle cx="120" cy="260" r="10" fill="#6a1b9a" fill-opacity="0.2"/>
+    <circle cx="160" cy="240" r="10" fill="#6a1b9a" fill-opacity="0.2"/>
+    <circle cx="200" cy="260" r="10" fill="#6a1b9a" fill-opacity="0.2"/>
+    <circle cx="240" cy="240" r="10" fill="#6a1b9a" fill-opacity="0.2"/>
+    <circle cx="280" cy="260" r="10" fill="#6a1b9a" fill-opacity="0.2"/>
+    
+    <line x1="120" y1="200" x2="120" y2="260" />
+    <line x1="160" y1="180" x2="160" y2="240" />
+    <line x1="200" y1="200" x2="200" y2="260" />
+    <line x1="240" y1="180" x2="240" y2="240" />
+    <line x1="280" y1="200" x2="280" y2="260" />
+    
+    <line x1="120" y1="260" x2="160" y2="240" />
+    <line x1="160" y1="240" x2="200" y2="260" />
+    <line x1="200" y1="260" x2="240" y2="240" />
+    <line x1="240" y1="240" x2="280" y2="260" />
+  </g>
+  
+  <!-- Beaker with polymer liquid -->
+  <g>
+    <path d="M160 320H240V220H160V320Z" fill="none" stroke="#6a1b9a" stroke-width="3"/>
+    <path d="M150 320H250" stroke="#6a1b9a" stroke-width="4"/>
+    <path d="M160 260H240V320H160V260Z" fill="#6a1b9a" fill-opacity="0.4"/>
+    
+    <!-- Bubbles in polymer -->
+    <circle cx="180" cy="290" r="5" fill="#fff" fill-opacity="0.7"/>
+    <circle cx="190" cy="280" r="3" fill="#fff" fill-opacity="0.7"/>
+    <circle cx="200" cy="300" r="4" fill="#fff" fill-opacity="0.7"/>
+    <circle cx="210" cy="275" r="3" fill="#fff" fill-opacity="0.7"/>
+    <circle cx="220" cy="295" r="4" fill="#fff" fill-opacity="0.7"/>
+  </g>
+  
+  <!-- Chemistry Icon -->
+  <g transform="translate(200, 330) scale(0.10)">
+    <path d="M302.8 64C295.9 64 289.1 64.8 282.5 66.3L298.4 128H454.4C457.6 128 460.1 130.3 461.2 133.4C461.4 133.9 461.6 134.4 461.7 135L471.6 170.1C476.1 184.5 475.7 199.9 470.5 214C465.4 228.1 455.9 239.4 443.7 246.1L384 279.1V464C384 490.5 362.5 512 336 512H176C149.5 512 128 490.5 128 464V279.1L68.27 246.1C56.15 239.4 46.74 228.1 41.57 214C36.39 199.9 35.97 184.5 40.47 170.1L50.36 135C50.47 134.4 50.67 133.9 50.92 133.4C51.82 130.3 54.41 128 57.65 128H213.6L229.5 66.3C222.9 64.8 216.1 64 209.2 64H83.2C51.2 64 25.53 85.97 19.73 117.2L5.128 182.2C-1.071 213.5 15.1 245.3 45.62 261.2L96 289.6V464C96 508.2 131.8 544 176 544H336C380.2 544 416 508.2 416 464V289.6L466.4 261.2C496.9 245.3 513.1 213.5 506.9 182.2L492.3 117.2C486.5 85.97 460.8 64 428.8 64H302.8z" fill="#6a1b9a"/>
+  </g>
+  
+  <text x="200" y="60" font-family="Arial, sans-serif" font-size="24" fill="#6a1b9a" text-anchor="middle" font-weight="bold">PolyFlex Prepolymers</text>
+</svg>

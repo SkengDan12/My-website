@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#e3f2fd"/>
+  <rect x="120" y="120" width="160" height="160" fill="#1e88e5" fill-opacity="0.2"/>
+  <rect x="140" y="140" width="120" height="120" fill="#1e88e5" fill-opacity="0.3"/>
+  <rect x="160" y="160" width="80" height="80" fill="#1e88e5" fill-opacity="0.4"/>
+  
+  <!-- Grid pattern for rigid foam structure -->
+  <g fill="#1e88e5" fill-opacity="0.2">
+    <rect x="100" y="100" width="10" height="10"/>
+    <rect x="120" y="100" width="10" height="10"/>
+    <rect x="140" y="100" width="10" height="10"/>
+    <rect x="160" y="100" width="10" height="10"/>
+    <rect x="180" y="100" width="10" height="10"/>
+    <rect x="200" y="100" width="10" height="10"/>
+    <rect x="220" y="100" width="10" height="10"/>
+    <rect x="240" y="100" width="10" height="10"/>
+    <rect x="260" y="100" width="10" height="10"/>
+    <rect x="280" y="100" width="10" height="10"/>
+    
+    <rect x="100" y="290" width="10" height="10"/>
+    <rect x="120" y="290" width="10" height="10"/>
+    <rect x="140" y="290" width="10" height="10"/>
+    <rect x="160" y="290" width="10" height="10"/>
+    <rect x="180" y="290" width="10" height="10"/>
+    <rect x="200" y="290" width="10" height="10"/>
+    <rect x="220" y="290" width="10" height="10"/>
+    <rect x="240" y="290" width="10" height="10"/>
+    <rect x="260" y="290" width="10" height="10"/>
+    <rect x="280" y="290" width="10" height="10"/>
+    
+    <rect x="100" y="120" width="10" height="10"/>
+    <rect x="100" y="140" width="10" height="10"/>
+    <rect x="100" y="160" width="10" height="10"/>
+    <rect x="100" y="180" width="10" height="10"/>
+    <rect x="100" y="200" width="10" height="10"/>
+    <rect x="100" y="220" width="10" height="10"/>
+    <rect x="100" y="240" width="10" height="10"/>
+    <rect x="100" y="260" width="10" height="10"/>
+    <rect x="100" y="280" width="10" height="10"/>
+    
+    <rect x="290" y="120" width="10" height="10"/>
+    <rect x="290" y="140" width="10" height="10"/>
+    <rect x="290" y="160" width="10" height="10"/>
+    <rect x="290" y="180" width="10" height="10"/>
+    <rect x="290" y="200" width="10" height="10"/>
+    <rect x="290" y="220" width="10" height="10"/>
+    <rect x="290" y="240" width="10" height="10"/>
+    <rect x="290" y="260" width="10" height="10"/>
+    <rect x="290" y="280" width="10" height="10"/>
+  </g>
+  
+  <!-- Foam Cell Structure -->
+  <g fill="none" stroke="#1e88e5" stroke-width="1">
+    <circle cx="150" cy="150" r="15"/>
+    <circle cx="180" cy="150" r="12"/>
+    <circle cx="210" cy="150" r="14"/>
+    <circle cx="240" cy="150" r="13"/>
+    
+    <circle cx="150" cy="180" r="13"/>
+    <circle cx="180" cy="180" r="15"/>
+    <circle cx="210" cy="180" r="12"/>
+    <circle cx="240" cy="180" r="14"/>
+    
+    <circle cx="150" cy="210" r="14"/>
+    <circle cx="180" cy="210" r="13"/>
+    <circle cx="210" cy="210" r="15"/>
+    <circle cx="240" cy="210" r="12"/>
+    
+    <circle cx="150" cy="240" r="12"/>
+    <circle cx="180" cy="240" r="14"/>
+    <circle cx="210" cy="240" r="13"/>
+    <circle cx="240" cy="240" r="15"/>
+  </g>
+  
+  <!-- 3D Block Icon -->
+  <g transform="translate(200, 330) scale(0.12)">
+    <path d="M0 448V64L192 0V384L0 448Z" fill="#1e88e5" fill-opacity="0.7"/>
+    <path d="M192 384L512 256V0L192 0V384Z" fill="#1e88e5" fill-opacity="0.9"/>
+    <path d="M0 64L192 64L512 0L320 0L0 64Z" fill="#1e88e5"/>
+  </g>
+  
+  <text x="200" y="60" font-family="Arial, sans-serif" font-size="24" fill="#1e88e5" text-anchor="middle" font-weight="bold">RigidCore Foam</text>
+</svg>

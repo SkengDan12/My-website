@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#fff2e0"/>
+  <path d="M140 160C140 137.909 157.909 120 180 120H220C242.091 120 260 137.909 260 160V240C260 262.091 242.091 280 220 280H180C157.909 280 140 262.091 140 240V160Z" fill="#ff9a00" fill-opacity="0.2"/>
+  <circle cx="160" cy="160" r="30" fill="#ff9a00" fill-opacity="0.3"/>
+  <circle cx="240" cy="160" r="30" fill="#ff9a00" fill-opacity="0.3"/>
+  <circle cx="160" cy="240" r="30" fill="#ff9a00" fill-opacity="0.3"/>
+  <circle cx="240" cy="240" r="30" fill="#ff9a00" fill-opacity="0.3"/>
+  <circle cx="200" cy="200" r="40" fill="#ff9a00" fill-opacity="0.4"/>
+  <path d="M120 120C120 97.9086 137.909 80 160 80H240C262.091 80 280 97.9086 280 120V190C280 212.091 262.091 230 240 230H160C137.909 230 120 212.091 120 190V120Z" fill="#ff9a00" fill-opacity="0.2"/>
+  
+  <!-- Spray Foam Icon -->
+  <g transform="translate(200, 330) scale(0.12)">
+    <path d="M512 448H0V96H512V448Z" fill="#fff"/>
+    <g>
+      <path d="M192 192C192 174.327 206.327 160 224 160H288C305.673 160 320 174.327 320 192V416C320 433.673 305.673 448 288 448H224C206.327 448 192 433.673 192 416V192Z" fill="#ff9a00"/>
+      <path d="M224 96H288V160H224V96Z" fill="#ff9a00"/>
+      <path d="M224 32H288V96H224V32Z" fill="#ff9a00"/>
+      <path d="M352 192H416V256H352V192Z" fill="#ff9a00"/>
+      <path d="M352 288H416V352H352V288Z" fill="#ff9a00"/>
+      <path d="M352 384H416V448H352V384Z" fill="#ff9a00"/>
+      <path d="M96 192H160V256H96V192Z" fill="#ff9a00"/>
+      <path d="M96 288H160V352H96V288Z" fill="#ff9a00"/>
+      <path d="M96 384H160V448H96V384Z" fill="#ff9a00"/>
+      <path d="M224 448H288V480H224V448Z" fill="#ff9a00"/>
+    </g>
+  </g>
+  
+  <!-- Molecules -->
+  <circle cx="130" cy="130" r="6" fill="#ff9a00"/>
+  <circle cx="150" cy="110" r="6" fill="#ff9a00"/>
+  <circle cx="170" cy="130" r="6" fill="#ff9a00"/>
+  <line x1="130" y1="130" x2="150" y2="110" stroke="#ff9a00" stroke-width="2"/>
+  <line x1="150" y1="110" x2="170" y2="130" stroke="#ff9a00" stroke-width="2"/>
+  
+  <circle cx="230" cy="130" r="6" fill="#ff9a00"/>
+  <circle cx="250" cy="110" r="6" fill="#ff9a00"/>
+  <circle cx="270" cy="130" r="6" fill="#ff9a00"/>
+  <line x1="230" y1="130" x2="250" y2="110" stroke="#ff9a00" stroke-width="2"/>
+  <line x1="250" y1="110" x2="270" y2="130" stroke="#ff9a00" stroke-width="2"/>
+  
+  <circle cx="130" cy="230" r="6" fill="#ff9a00"/>
+  <circle cx="150" cy="250" r="6" fill="#ff9a00"/>
+  <circle cx="130" cy="270" r="6" fill="#ff9a00"/>
+  <line x1="130" y1="230" x2="150" y2="250" stroke="#ff9a00" stroke-width="2"/>
+  <line x1="150" y1="250" x2="130" y2="270" stroke="#ff9a00" stroke-width="2"/>
+  
+  <circle cx="270" cy="230" r="6" fill="#ff9a00"/>
+  <circle cx="250" cy="250" r="6" fill="#ff9a00"/>
+  <circle cx="270" cy="270" r="6" fill="#ff9a00"/>
+  <line x1="270" y1="230" x2="250" y2="250" stroke="#ff9a00" stroke-width="2"/>
+  <line x1="250" y1="250" x2="270" y2="270" stroke="#ff9a00" stroke-width="2"/>
+  
+  <text x="200" y="60" font-family="Arial, sans-serif" font-size="24" fill="#ff9a00" text-anchor="middle" font-weight="bold">ProFoam Insulation</text>
+</svg>
