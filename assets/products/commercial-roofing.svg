@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#64b5f6"/>
+      <stop offset="100%" stop-color="#bbdefb"/>
+    </linearGradient>
+    <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#78909c"/>
+      <stop offset="100%" stop-color="#546e7a"/>
+    </linearGradient>
+    <linearGradient id="roofGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff9a00"/>
+      <stop offset="100%" stop-color="#ffb74d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="400" height="300" fill="url(#skyGradient)"/>
+  
+  <!-- Sun -->
+  <circle cx="350" cy="50" r="30" fill="#ffeb3b" filter="url(#shadow)"/>
+  
+  <!-- Commercial Building -->
+  <g filter="url(#shadow)">
+    <!-- Building structure -->
+    <rect x="50" y="100" width="300" height="150" fill="url(#buildingGradient)"/>
+    
+    <!-- Roof with foam coating -->
+    <rect x="40" y="90" width="320" height="20" fill="url(#roofGradient)" rx="2"/>
+    
+    <!-- Windows -->
+    <g>
+      <rect x="70" y="130" width="25" height="35" fill="#e3f2fd" stroke="#546e7a" stroke-width="2"/>
+      <rect x="110" y="130" width="25" height="35" fill="#e3f2fd" stroke="#546e7a" stroke-width="2"/>
+      <rect x="150" y="130" width="25" height="35" fill="#e3f2fd" stroke="#546e7a" stroke-width="2"/>
+      <rect x="190" y="130" width="25" height="35" fill="#e3f2fd" stroke="#546e7a" stroke-width="2"/>
+      <rect x="230" y="130" width="25" height="35" fill="#e3f2fd" stroke="#546e7a" stroke-width="2"/>
+      <rect x="270" y="130" width="25" height="35" fill="#e3f2fd" stroke="#546e7a" stroke-width="2"/>
+      
+      <rect x="70" y="180" width="25" height="35" fill="#e3f2fd" stroke="#546e7a" stroke-width="2"/>
+      <rect x="110" y="180" width="25" height="35" fill="#e3f2fd" stroke="#546e7a" stroke-width="2"/>
+      <rect x="150" y="180" width="25" height="35" fill="#e3f2fd" stroke="#546e7a" stroke-width="2"/>
+      <rect x="190" y="180" width="25" height="35" fill="#e3f2fd" stroke="#546e7a" stroke-width="2"/>
+      <rect x="230" y="180" width="25" height="35" fill="#e3f2fd" stroke="#546e7a" stroke-width="2"/>
+      <rect x="270" y="180" width="25" height="35" fill="#e3f2fd" stroke="#546e7a" stroke-width="2"/>
+    </g>
+    
+    <!-- Door -->
+    <rect x="160" y="200" width="40" height="50" fill="#455a64" stroke="#37474f" stroke-width="2"/>
+    <circle cx="190" cy="225" r="3" fill="#ffc107"/>
+  </g>
+  
+  <!-- Spray foam worker on roof -->
+  <g transform="translate(200, 70) scale(0.5)">
+    <circle cx="30" cy="30" r="15" fill="#ffcc80" stroke="#f57c00" stroke-width="1"/> <!-- Head -->
+    <rect x="25" y="45" width="10" height="30" fill="#1565c0"/> <!-- Body -->
+    <rect x="15" y="50" width="30" height="10" fill="#1565c0"/> <!-- Arms -->
+    <rect x="25" y="75" width="5" height="15" fill="#0d47a1"/> <!-- Left leg -->
+    <rect x="35" y="75" width="5" height="15" fill="#0d47a1"/> <!-- Right leg -->
+    
+    <!-- Spray equipment -->
+    <rect x="45" y="55" width="20" height="10" fill="#424242"/>
+    <path d="M65,60 L80,55 L80,65 Z" fill="#616161"/>
+  </g>
+  
+  <!-- Label -->
+  <rect x="10" y="10" width="150" height="30" rx="5" fill="#ff9a00" filter="url(#shadow)"/>
+  <text x="25" y="30" font-family="Arial" font-weight="bold" font-size="14" fill="white">Commercial Roofing</text>
+</svg>

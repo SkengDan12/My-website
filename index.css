@@ -1,0 +1,188 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 35 100% 50%;  /* Isothane orange: #ff9a00 */
+  --primary-rgb: 255, 154, 0;  /* RGB values for rgba usage */
+  --primary-hex: #ff9a00;  /* Hex value for direct CSS usage */
+  --primary-dark: 35 100% 45%;  /* Darker shade: #e68a00 */
+  --primary-light: 35 100% 60%;  /* Lighter shade: #ffb133 */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 20%;  /* Isothane dark gray/black: #333333 */
+  --secondary-rgb: 51, 51, 51;  /* RGB values for rgba usage */
+  --secondary-hex: #333333;  /* Hex value for direct CSS usage */
+  --secondary-dark: 0 0% 13%;  /* Darker shade: #222222 */
+  --secondary-light: 0 0% 27%;  /* Lighter shade: #444444 */
+  --secondary-foreground: 0 0% 100%;
+  --accent: 35 80% 60%;  /* Softer orange accent: #ffa940 */
+  --accent-dark: 35 80% 50%;  /* Darker shade: #ff9417 */
+  --accent-light: 35 80% 70%;  /* Lighter shade: #ffbe69 */
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 35 100% 50%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 0 0% 10%;
+  --foreground: 0 0% 98%;
+  --muted: 0 0% 15%;
+  --muted-foreground: 0 0% 65%;
+  --popover: 0 0% 13%;
+  --popover-foreground: 0 0% 98%;
+  --card: 0 0% 13%;
+  --card-foreground: 0 0% 98%;
+  --border: 0 0% 20%;
+  --input: 0 0% 20%;
+  --primary: 35 100% 50%;  /* Isothane orange: #ff9a00 */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 80%;  /* Light gray in dark mode */
+  --secondary-foreground: 0 0% 10%;
+  --accent: 35 80% 60%;  /* Softer orange accent: #ffa940 */
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 35 100% 50%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply antialiased bg-background text-foreground;
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 relative max-w-[1200px] w-full;
+  }
+
+  .nav-link {
+    @apply relative font-medium text-gray-800 hover:text-primary transition-colors duration-300;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-[-5px] left-0 w-0 h-0.5 bg-secondary transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .product-card {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .product-card:hover {
+    @apply transform -translate-y-2 shadow-lg;
+  }
+
+  .product-card:hover .product-overlay {
+    @apply opacity-100;
+  }
+
+  .compare-slider-container {
+    @apply relative overflow-hidden;
+  }
+
+  .slider-handle {
+    @apply absolute top-0 bottom-0 w-1.5 bg-white cursor-ew-resize shadow-md;
+  }
+
+  .before-image, .after-image {
+    @apply absolute top-0 h-full w-full bg-cover;
+  }
+}
+
+@layer base {
+  :root {
+    --font-sans: 'Exo 2', 'Open Sans', system-ui, sans-serif;
+    --font-heading: 'Teko', 'Montserrat', system-ui, sans-serif;
+    --font-logo-primary: 'Orbitron', system-ui, sans-serif;
+    --font-logo-secondary: 'Ubuntu', system-ui, sans-serif;
+    --font-tech: 'Audiowide', system-ui, sans-serif;
+    --font-stencil: 'Saira Stencil One', system-ui, sans-serif;
+  }
+
+  /* Animation classes */
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-in-out;
+  }
+
+  /* Noise Animation for Hero Section */
+  @keyframes noiseAnimation {
+    0% { transform: translate(0, 0); }
+    10% { transform: translate(-5%, -5%); }
+    20% { transform: translate(-10%, 5%); }
+    30% { transform: translate(5%, -10%); }
+    40% { transform: translate(-5%, 15%); }
+    50% { transform: translate(-10%, 5%); }
+    60% { transform: translate(15%, 0); }
+    70% { transform: translate(0, 10%); }
+    80% { transform: translate(-15%, 0); }
+    90% { transform: translate(10%, 5%); }
+    100% { transform: translate(0, 0); }
+  }
+
+  .noise-animation {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    animation: noiseAnimation 1s steps(2) infinite;
+    pointer-events: none;
+  }
+
+  /* Enhanced Button Styles */
+  .btn-glow {
+    box-shadow: 0 0 20px rgba(255, 154, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+
+  .btn-glow:hover {
+    box-shadow: 0 0 30px rgba(255, 154, 0, 0.7);
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+}

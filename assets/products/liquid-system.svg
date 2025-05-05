@@ -1,0 +1,55 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="liquidSystemGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#388e3c" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#81c784" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="5" flood-opacity="0.3"/>
+    </filter>
+    <radialGradient id="dropGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#81c784" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#388e3c" stop-opacity="0.8"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Liquid Coating Representation -->
+  <g filter="url(#shadow)">
+    <!-- Surface with coating -->
+    <rect x="100" y="350" width="600" height="50" rx="5" fill="#e0e0e0"/>
+    
+    <!-- Coating Layer -->
+    <path d="M100,350 L700,350 L680,330 C650,320 600,310 550,325 C500,340 450,330 400,320 C350,310 300,300 250,315 C200,330 150,340 120,330 L100,350 Z" fill="url(#liquidSystemGradient)"/>
+    
+    <!-- Dripping elements -->
+    <path d="M200,350 L200,400 C200,420 180,420 180,400 L180,350 Z" fill="url(#liquidSystemGradient)" opacity="0.9"/>
+    <path d="M400,350 L400,410 C400,430 380,430 380,410 L380,350 Z" fill="url(#liquidSystemGradient)" opacity="0.9"/>
+    <path d="M600,350 L600,405 C600,425 580,425 580,405 L580,350 Z" fill="url(#liquidSystemGradient)" opacity="0.9"/>
+  </g>
+  
+  <!-- Liquid Drops -->
+  <g>
+    <circle cx="150" cy="250" r="30" fill="url(#dropGradient)"/>
+    <circle cx="250" cy="200" r="25" fill="url(#dropGradient)"/>
+    <circle cx="350" cy="240" r="35" fill="url(#dropGradient)"/>
+    <circle cx="450" cy="190" r="30" fill="url(#dropGradient)"/>
+    <circle cx="550" cy="230" r="28" fill="url(#dropGradient)"/>
+    <circle cx="650" cy="210" r="32" fill="url(#dropGradient)"/>
+  </g>
+  
+  <!-- Application Tool -->
+  <g transform="translate(300, 120)">
+    <rect x="0" y="0" width="50" height="10" fill="#555"/>
+    <rect x="50" y="-15" width="100" height="40" rx="5" fill="#444"/>
+    <rect x="150" y="-5" width="80" height="20" rx="2" fill="#333"/>
+    <path d="M230,5 L250,-5 L250,15 Z" fill="#666"/>
+  </g>
+  
+  <!-- Product Label -->
+  <g transform="translate(550, 500)">
+    <rect width="200" height="60" rx="10" fill="#388e3c" filter="url(#shadow)"/>
+    <text x="20" y="35" font-family="Arial" font-weight="bold" font-size="20" fill="white">FlexCoat™</text>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sprayFoamGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9a00" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffb74d" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="5" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Spray Foam Representation -->
+  <g filter="url(#shadow)">
+    <!-- Main Foam Blobs -->
+    <path d="M200,200 C300,150 350,300 450,250 C550,200 600,350 700,300 Q750,250 650,200 Q550,150 500,250 Q450,350 350,300 Q250,250 200,200 Z" fill="url(#sprayFoamGradient)"/>
+    <path d="M150,350 C250,300 300,450 400,400 C500,350 550,500 650,450 Q700,400 600,350 Q500,300 450,400 Q400,500 300,450 Q200,400 150,350 Z" fill="url(#sprayFoamGradient)" opacity="0.9"/>
+    
+    <!-- Texture Elements -->
+    <circle cx="250" cy="230" r="15" fill="#ffd180" opacity="0.7"/>
+    <circle cx="350" cy="270" r="12" fill="#ffd180" opacity="0.7"/>
+    <circle cx="450" cy="220" r="18" fill="#ffd180" opacity="0.7"/>
+    <circle cx="550" cy="280" r="14" fill="#ffd180" opacity="0.7"/>
+    <circle cx="650" cy="250" r="16" fill="#ffd180" opacity="0.7"/>
+    
+    <circle cx="200" cy="380" r="13" fill="#ffd180" opacity="0.7"/>
+    <circle cx="300" cy="420" r="17" fill="#ffd180" opacity="0.7"/>
+    <circle cx="400" cy="370" r="15" fill="#ffd180" opacity="0.7"/>
+    <circle cx="500" cy="430" r="12" fill="#ffd180" opacity="0.7"/>
+    <circle cx="600" cy="400" r="14" fill="#ffd180" opacity="0.7"/>
+  </g>
+  
+  <!-- Spray Applicator -->
+  <g transform="translate(100, 400) rotate(-20)">
+    <rect width="200" height="40" rx="10" fill="#333333"/>
+    <rect x="200" y="10" width="100" height="20" rx="5" fill="#444444"/>
+    <circle cx="300" cy="20" r="25" fill="#555555"/>
+    <path d="M305,20 L350,10 L350,30 Z" fill="#666666"/>
+  </g>
+  
+  <!-- Product Label -->
+  <g transform="translate(550, 500)">
+    <rect width="200" height="60" rx="10" fill="#ff9a00" filter="url(#shadow)"/>
+    <text x="20" y="35" font-family="Arial" font-weight="bold" font-size="20" fill="white">ProFoam™</text>
+  </g>
+</svg>
